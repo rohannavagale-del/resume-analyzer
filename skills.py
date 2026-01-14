@@ -1,3 +1,15 @@
+JOB_DESCRIPTIONS = {
+    "Data Scientist": "Analyzes complex data to extract insights and build predictive models using statistical and machine learning techniques.",
+    "Web Developer": "Designs and builds responsive websites and web applications using various frontend and backend technologies.",
+    "ML Engineer": "Develops and deploys machine learning models into production environments, focusing on scalability and performance.",
+    "DevOps Engineer": "Streamlines software development and deployment through automation, CI/CD, and cloud infrastructure management.",
+    "Frontend Developer": "Specializes in building user interfaces and client-side functionality using modern JavaScript frameworks.",
+    "Backend Developer": "Focuses on server-side logic, database interactions, and application architecture.",
+    "Data Analyst": "Interprets data to help companies make better business decisions through data visualization and reporting.",
+    "Cybersecurity Analyst": "Protects systems and networks from cyber threats by implementing security measures and monitoring for breaches.",
+    "Cloud Architect": "Designs and manages cloud computing strategies and infrastructure for organizations."
+}
+
 JOB_SKILLS = {
     # Existing roles
     "Data Scientist": [
