@@ -1,6 +1,10 @@
 import streamlit as st
-from skills import JOB_ROLES, JOB_SKILLS
+from skills import JOB_ROLES, JOB_SKILLS, SKILL_RESOURCES
 from utils import extract_text_from_pdf, analyze_skills
+
+# Initialize session state for skill resources
+if 'SKILL_RESOURCES' not in st.session_state:
+    st.session_state.SKILL_RESOURCES = SKILL_RESOURCES
 
 st.set_page_config(page_title="AI Resume Analyzer", layout="centered")
 
@@ -85,9 +89,18 @@ if uploaded_file:
 
     st.subheader("❌ Missing Skills")
     if missing:
-        st.error(", ".join(missing))
+        for skill in missing:
+            skill_lower = skill.lower()
+            if skill_lower in st.session_state.SKILL_RESOURCES:
+                resources = st.session_state.SKILL_RESOURCES[skill_lower]
+                with st.expander(f"{skill} - Learning Resources"):
+                    st.markdown(f"#### {skill.capitalize()} Resources")
+                    st.markdown(f"- [YouTube Tutorial]({resources['youtube']})")
+                    st.markdown(f"- [Coursera Course]({resources['coursera']})")
+            else:
+                st.error(skill)
     else:
         st.success("No missing skills 🎉")
 
     st.subheader("🚀 Improvement Tip")
-    st.info("Focus on learning missing skills to improve your resume score.")
+    st.info("Check out the learning resources above for any missing skills to improve your resume score.")

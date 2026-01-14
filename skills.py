@@ -1,3 +1,70 @@
+SKILL_RESOURCES = {
+    "python": {
+        "youtube": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+        "coursera": "https://www.coursera.org/learn/python"
+    },
+    "pandas": {
+        "youtube": "https://www.youtube.com/watch?v=dcqPhpY7tWk",
+        "coursera": "https://www.coursera.org/learn/data-analysis-with-python"
+    },
+    "numpy": {
+        "youtube": "https://www.youtube.com/watch?v=QUT1VHiLmmI",
+        "coursera": "https://www.coursera.org/learn/python-numpy"
+    },
+    "machine learning": {
+        "youtube": "https://www.youtube.com/watch?v=NWONeJKn6kc",
+        "coursera": "https://www.coursera.org/learn/machine-learning"
+    },
+    "statistics": {
+        "youtube": "https://www.youtube.com/watch?v=xxpc-HPKN28",
+        "coursera": "https://www.coursera.org/learn/statistics-for-data-science-python"
+    },
+    "scikit-learn": {
+        "youtube": "https://www.youtube.com/watch?v=0LtBwT5uaD4",
+        "coursera": "https://www.coursera.org/learn/machine-learning-with-python"
+    },
+    "sql": {
+        "youtube": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+        "coursera": "https://www.coursera.org/learn/sql-for-data-science"
+    },
+    "data visualization": {
+        "youtube": "https://www.youtube.com/watch?v=3m7BgIvC-uQ",
+        "coursera": "https://www.coursera.org/learn/python-for-data-visualization"
+    },
+    "html": {
+        "youtube": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
+        "coursera": "https://www.coursera.org/learn/html"
+    },
+    "css": {
+        "youtube": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+        "coursera": "https://www.coursera.org/learn/introcss"
+    },
+    "javascript": {
+        "youtube": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+        "coursera": "https://www.coursera.org/learn/javascript"
+    },
+    "react": {
+        "youtube": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+        "coursera": "https://www.coursera.org/learn/front-end-react"
+    },
+    "node": {
+        "youtube": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+        "coursera": "https://www.coursera.org/learn/server-side-nodejs"
+    },
+    "express": {
+        "youtube": "https://www.youtube.com/watch?v=L72fhGm1tfE",
+        "coursera": "https://www.coursera.org/learn/web-frameworks"
+    },
+    "mongodb": {
+        "youtube": "https://www.youtube.com/watch?v=2QQGWYe7IDU",
+        "coursera": "https://www.coursera.org/learn/mongodb"
+    },
+    "api": {
+        "youtube": "https://www.youtube.com/watch?v=GZvSYJDk-us",
+        "coursera": "https://www.coursera.org/learn/apis"
+    }
+}
+
 JOB_ROLES = {
     "Data Scientist": {
         "description": "Data Scientists analyze and interpret complex data to help organizations make better decisions. They use statistical analysis, machine learning, and data visualization techniques to extract insights from data.",
