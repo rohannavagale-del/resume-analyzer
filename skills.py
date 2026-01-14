@@ -1,53 +1,68 @@
-JOB_DESCRIPTIONS = {
-    "Data Scientist": "Analyzes complex data to extract insights and build predictive models using statistical and machine learning techniques.",
-    "Web Developer": "Designs and builds responsive websites and web applications using various frontend and backend technologies.",
-    "ML Engineer": "Develops and deploys machine learning models into production environments, focusing on scalability and performance.",
-    "DevOps Engineer": "Streamlines software development and deployment through automation, CI/CD, and cloud infrastructure management.",
-    "Frontend Developer": "Specializes in building user interfaces and client-side functionality using modern JavaScript frameworks.",
-    "Backend Developer": "Focuses on server-side logic, database interactions, and application architecture.",
-    "Data Analyst": "Interprets data to help companies make better business decisions through data visualization and reporting.",
-    "Cybersecurity Analyst": "Protects systems and networks from cyber threats by implementing security measures and monitoring for breaches.",
-    "Cloud Architect": "Designs and manages cloud computing strategies and infrastructure for organizations."
+JOB_ROLES = {
+    "Data Scientist": {
+        "description": "Data Scientists analyze and interpret complex data to help organizations make better decisions. They use statistical analysis, machine learning, and data visualization techniques to extract insights from data.",
+        "skills": [
+            "python", "pandas", "numpy", "machine learning",
+            "statistics", "scikit-learn", "sql", "data visualization"
+        ]
+    },
+    "Web Developer": {
+        "description": "Web Developers design and build websites, ensuring they are visually appealing, user-friendly, and functional across different devices and browsers.",
+        "skills": [
+            "html", "css", "javascript", "react",
+            "node", "express", "mongodb", "api"
+        ]
+    },
+    "ML Engineer": {
+        "description": "Machine Learning Engineers develop and deploy machine learning models, working on the infrastructure and systems that enable AI applications.",
+        "skills": [
+            "python", "machine learning", "deep learning",
+            "tensorflow", "pytorch", "docker", "cloud"
+        ]
+    },
+    "DevOps Engineer": {
+        "description": "DevOps Engineers bridge the gap between development and operations, implementing CI/CD pipelines, infrastructure as code, and automation to streamline software delivery.",
+        "skills": [
+            "docker", "kubernetes", "aws", "azure", "gcp",
+            "ci/cd", "terraform", "ansible", "linux", "python"
+        ]
+    },
+    "Frontend Developer": {
+        "description": "Frontend Developers create the visual and interactive elements of websites and web applications, focusing on user experience and interface design.",
+        "skills": [
+            "javascript", "react", "typescript", "html5", "css3",
+            "redux", "next.js", "responsive design", "webpack", "jest"
+        ]
+    },
+    "Backend Developer": {
+        "description": "Backend Developers build and maintain the server-side of web applications, handling data storage, security, and application logic.",
+        "skills": [
+            "python", "java", "node.js", "django", "flask",
+            "spring boot", "sql", "nosql", "rest api", "graphql"
+        ]
+    },
+    "Data Analyst": {
+        "description": "Data Analysts collect, process, and perform statistical analyses of data to help organizations make data-driven decisions.",
+        "skills": [
+            "sql", "excel", "tableau", "power bi", "python",
+            "r", "data visualization", "statistics", "pandas", "numpy"
+        ]
+    },
+    "Cybersecurity Analyst": {
+        "description": "Cybersecurity Analysts protect computer systems and networks from cyber threats, implementing security measures and responding to security breaches.",
+        "skills": [
+            "security", "network security", "penetration testing", "firewall",
+            "siem", "incident response", "python", "linux", "encryption"
+        ]
+    },
+    "Cloud Architect": {
+        "description": "Cloud Architects design and implement cloud computing solutions, ensuring they are secure, scalable, and meet business requirements.",
+        "skills": [
+            "aws", "azure", "gcp", "cloud security", "terraform",
+            "kubernetes", "docker", "devops", "networking", "python"
+        ]
+    }
 }
 
-JOB_SKILLS = {
-    # Existing roles
-    "Data Scientist": [
-        "python", "pandas", "numpy", "machine learning",
-        "statistics", "scikit-learn", "sql", "data visualization"
-    ],
-    "Web Developer": [
-        "html", "css", "javascript", "react",
-        "node", "express", "mongodb", "api"
-    ],
-    "ML Engineer": [
-        "python", "machine learning", "deep learning",
-        "tensorflow", "pytorch", "docker", "cloud"
-    ],
-    
-    # New roles
-    "DevOps Engineer": [
-        "docker", "kubernetes", "aws", "azure", "gcp",
-        "ci/cd", "terraform", "ansible", "linux", "python"
-    ],
-    "Frontend Developer": [
-        "javascript", "react", "typescript", "html5", "css3",
-        "redux", "next.js", "responsive design", "webpack", "jest"
-    ],
-    "Backend Developer": [
-        "python", "java", "node.js", "django", "flask",
-        "spring boot", "sql", "nosql", "rest api", "graphql"
-    ],
-    "Data Analyst": [
-        "sql", "excel", "tableau", "power bi", "python",
-        "r", "data visualization", "statistics", "pandas", "numpy"
-    ],
-    "Cybersecurity Analyst": [
-        "security", "network security", "penetration testing", "firewall",
-        "siem", "incident response", "python", "linux", "encryption"
-    ],
-    "Cloud Architect": [
-        "aws", "azure", "gcp", "cloud security", "terraform",
-        "kubernetes", "docker", "devops", "networking", "python"
-    ]
-}
+# For backward compatibility
+JOB_SKILLS = {role: data["skills"] for role, data in JOB_ROLES.items()}
